@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+  <title>Generate-QR-Code</title>
+</head>
+
+<body>
+  <form id="qr-form" class="container">
+    <h1>Generate-QR-Code</h1>
+    <div>
+      <label for="text-input">Enter your TEXT or URL:</label>
+      <input class="input1" type="text" id="text-input" placeholder=" TEXT or URL.">
+    </div>
+    <div>
+      <div class="edit_area">
+        <label for="size-input">px:</label>
+        <input type="number" id="size-input" value="200" min="00" max="800">
+        <label for="color-input">Color:</label>
+        <input type="color" id="color-input" value="#000000">
+        <label for="bgcolor-input">B-G Color:</label>
+        <input type="color" id="bgColor-input" value="#1e90ff">
+      </div>
+    </div>
+    <button class="btn" type="submit">Generate QR Code</button>
+    <div class="display">
+      <img id="qr-code">
+    </div>
+  </form>
+  <br>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
